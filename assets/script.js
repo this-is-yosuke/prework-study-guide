@@ -1,12 +1,6 @@
-const topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+const topics = ['HTML', 'CSS', 'Git', 'Javascript'];
 const randomTopic = topics[Math.floor(Math.random() * topics.length)];
-/* 
-    Hey, teach
-    Math.random() returns a number where 0 <= x < 1
-    With the algorithm from the example, Math.random() * topics.length has a maximum of 3.96 (0.99*4)
-    Since you're using Math.floor(), you'll get 3. You can refresh the browser a hundred times, but
-     you will not get 'Javascript' returned in the console. Consider adding +1 and getting rid of the edge case.
-*/
+
 function listTopics() {
     for(let x = 0; x < topics.length; x++){
         console.log(topics[x]);
